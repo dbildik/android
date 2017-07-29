@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -25,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
         ALissues = new ArrayList<String>(); //initialize ALissues
         AAissues = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, ALissues);//initialize AAissues
         LWissues.setAdapter(AAissues);
-
     }
 
     public void addIssue(View v) {
